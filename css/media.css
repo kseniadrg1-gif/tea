@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 860px) {
+  .user-actions {
+    margin-left: -60px;
+  }
   .menu__list {
     transform: translateY(-100%);
     position: absolute;
@@ -79,6 +82,20 @@
     display: flex;
   }
 
+  .menu--close {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .menu--close.menu--open {
+    display: block;
+  }
+
   .mobile-nav,
   .menu__close {
     display: block;
@@ -91,6 +108,12 @@
   .logo {
     margin-left: auto;
     margin-right: 154px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 860px) {
+  .user-actions {
+    margin-left: 56px;
   }
 }
 

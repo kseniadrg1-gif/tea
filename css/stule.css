@@ -100,7 +100,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0 20px;
-  margin-left: 160px;
+  margin-left: 60px;
 }
 
 .user-actions__user {
