@@ -58,9 +58,26 @@ body {
   height: 20px;
   flex-direction: column;
   justify-content: space-between;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+}
+.menu--close {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  transition: background-color 0.3s ease;
+}
+
+.menu--close.menu--open {
+  display: block;
+}
+
+.mobile-nav,
+.menu__close {
+  display: none;
 }
 
 .menu__btn span {
@@ -76,12 +93,14 @@ body {
   font-size: 18px;
   margin-left: 85px;
   gap: 0 65px;
+  z-index: 1000;
 }
 
 .user-actions {
   display: flex;
   align-items: center;
   gap: 0 20px;
+  margin-left: 160px;
 }
 
 .user-actions__user {
