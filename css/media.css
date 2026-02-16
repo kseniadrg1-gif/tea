@@ -7,11 +7,6 @@
     margin-right: auto;
   }
 
-  .menu__list {
-    margin-left: 60px;
-    gap: 0 40px;
-  }
-
   .menu__item:last-child .menu__link {
     white-space: nowrap;
   }
@@ -27,6 +22,16 @@
   .blockquote__text {
     margin-top: 120px;
     margin-bottom: 135px;
+  }
+
+  .assortment__title {
+    margin-bottom: 30px;
+  }
+  .assortment {
+    margin-bottom: 120px;
+  }
+  .assortment__list {
+    gap: 0;
   }
 }
 
@@ -129,6 +134,10 @@
   .blockquote__text {
     max-width: 640px;
   }
+  .assortment__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 680px) {
@@ -166,6 +175,9 @@
   .logo img {
     width: 40px;
   }
+  .assortment {
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 360px) {
   .user-actions__user {
@@ -190,5 +202,13 @@
     margin-top: 70px;
     margin-bottom: 80px;
     line-height: 1.5;
+  }
+
+  .assortment__title {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+  .assortment__img {
+    max-width: 170px;
   }
 }

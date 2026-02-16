@@ -48,8 +48,6 @@ body {
 
 .logo {
   margin-bottom: 35px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .menu__btn {
@@ -148,4 +146,52 @@ body {
   line-height: 48px;
   text-align: center;
   margin: 150px auto;
+}
+
+.assortment {
+  margin-bottom: 150px;
+}
+
+.assortment__list {
+  text-align: center;
+  display: flex;
+  gap: 0 40px;
+  flex-wrap: wrap;
+}
+
+.assortment__img {
+  width: 208px;
+  height: 208px;
+}
+.assortment__name {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 400px;
+  font-family: "Cormorant", serif;
+}
+.title {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.reviews {
+  background-color: #f7f2ea;
+  margin-bottom: 60px 0;
+}
+.reviews__list {
+  display: flex;
+  gap: 0 26px;
+}
+.reviews__item {
+  flex-basis: 280px;
+}
+.reviews__text {
+  font-size: 16px;
+  font-family: italic;
+  margin-bottom: 10px;
+}
+.reviews__name {
+  font-weight: 600;
 }
