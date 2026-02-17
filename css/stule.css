@@ -157,6 +157,7 @@ body {
   display: flex;
   gap: 0 40px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .assortment__img {
@@ -169,6 +170,9 @@ body {
   font-weight: 400px;
   font-family: "Cormorant", serif;
 }
+/* .reviews__item.reviews__item--hide {
+  display: none;
+} */
 .title {
   font-family: "Cormorant", serif;
   font-weight: 400;
@@ -189,9 +193,12 @@ body {
 }
 .reviews__text {
   font-size: 16px;
-  font-family: italic;
+  font-family: "Open Sans";
+  font-style: italic;
   margin-bottom: 10px;
 }
 .reviews__name {
+  font-family: "Open Sans";
   font-weight: 600;
+  font-style: normal;
 }
