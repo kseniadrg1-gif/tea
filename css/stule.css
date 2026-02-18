@@ -182,11 +182,11 @@ body {
 }
 .reviews {
   background-color: #f7f2ea;
-  margin-bottom: 60px 0;
 }
 .reviews__list {
   display: flex;
   gap: 0 26px;
+  justify-content: center;
 }
 .reviews__item {
   flex-basis: 280px;

@@ -199,6 +199,17 @@
   .assortment__list {
     margin-bottom: 67px;
   }
+  .reviews__list {
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    justify-content: center;
+  }
+  .reviews {
+    padding: 50px 0;
+  }
+  .reviews__item {
+    flex-basis: 220px;
+  }
 }
 @media (max-width: 360px) {
   .user-actions__user {
@@ -231,5 +242,13 @@
   }
   .assortment__img {
     max-width: 170px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .reviews__item:last-child,
+  .reviews__item:first-child {
+    display: none;
   }
 }
