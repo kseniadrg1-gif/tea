@@ -40,6 +40,13 @@
   .assortment__list {
     margin-bottom: 120px;
   }
+  .main-blog__item-img {
+    min-height: 153px;
+    min-width: 230px;
+  }
+  .main-blog__list {
+    gap: 67px 21px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -246,6 +253,9 @@
   .title {
     font-size: 24px;
     margin-bottom: 30px;
+  }
+  .reviews__item {
+    flex-basis: 100%;
   }
   .reviews__item:last-child,
   .reviews__item:first-child {
