@@ -40,12 +40,57 @@
   .assortment__list {
     margin-bottom: 120px;
   }
+  .main-blog {
+    padding: 120px 0;
+  }
   .main-blog__item-img {
-    min-height: 153px;
-    min-width: 230px;
+    width: 230px;
+    height: 153px;
   }
   .main-blog__list {
     gap: 67px 21px;
+  }
+  .main-blog__item-author {
+    bottom: 39px;
+  }
+
+  /* Исправления для секции mailing-list */
+  .mailing-list__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mailing-list__title {
+    text-align: center;
+  }
+
+  .mailing-list__text {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .mailing-list__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mailing-list__email {
+    width: 100%;
+    max-width: 439px;
+    margin-bottom: 15px;
+    margin-right: 210px;
+  }
+
+  .mailing-list__btn {
+    margin-left: 0;
+  }
+
+  .mailing-list__checkbox-label {
+    max-width: 580px;
+    margin: 0 auto;
   }
 }
 
