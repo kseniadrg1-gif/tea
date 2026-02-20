@@ -51,13 +51,15 @@
     gap: 67px 21px;
   }
   .main-blog__item-author {
-    bottom: 39px;
+    margin: auto 0;
+  }
+  .mailing-list {
+    padding: 60px 0;
   }
 
-  /* Исправления для секции mailing-list */
   .mailing-list__inner {
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
   }
 
   .mailing-list__title {
@@ -72,25 +74,37 @@
 
   .mailing-list__form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
   }
 
   .mailing-list__email {
-    width: 100%;
+    width: calc(100% - 130px);
     max-width: 439px;
-    margin-bottom: 15px;
-    margin-right: 210px;
+    margin-bottom: 0;
+    margin-right: 25px;
   }
 
   .mailing-list__btn {
+    width: 116px;
     margin-left: 0;
+    margin-bottom: 0;
+    align-self: center;
   }
 
   .mailing-list__checkbox-label {
+    width: 100%;
+    margin-top: 20px;
     max-width: 580px;
-    margin: 0 auto;
+  }
+  .checkbox-style {
+    height: 10px;
+    width: 10px;
   }
 }
 
@@ -262,7 +276,21 @@
   .reviews__item {
     flex-basis: 220px;
   }
+
+  .mailing-list__form {
+    flex-direction: column;
+  }
+  .mailing-list__email {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .mailing-list__btn {
+    width: 100%;
+    max-width: 200px;
+  }
 }
+
 @media (max-width: 360px) {
   .user-actions__user {
     margin-left: 0;

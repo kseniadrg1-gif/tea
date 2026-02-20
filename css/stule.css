@@ -173,7 +173,7 @@ body {
 .title {
   font-family: "Cormorant", serif;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -208,7 +208,7 @@ body {
 .main-blog__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 40px 75px;
   margin-bottom: 60px;
 }
 
@@ -229,7 +229,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 230px;
-  height: 153px; /* Фиксированная высота как у фото */
+  height: 153px;
 }
 
 .main-blog__item-title {
@@ -243,7 +243,7 @@ body {
 .main-blog__item-author {
   font-size: 13px;
   color: #666;
-  margin: auto 0; /* Вертикальное центрирование */
+  margin: auto 0;
   text-decoration: none;
 }
 
@@ -252,7 +252,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  margin-top: auto; /* Прижимает к низу */
+  margin-top: auto;
 }
 
 .main-blog__link {
@@ -295,7 +295,7 @@ body {
   border: none;
   border-bottom: 1px solid #b8b8b8;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -344,4 +344,120 @@ body {
   color: #666;
   line-height: 1.4;
   margin: 0;
+}
+
+/* Prioritise section */
+.prioritise {
+  padding: 150px 0;
+}
+
+.prioritise__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 49px;
+}
+
+.prioritise__item {
+  text-align: center;
+}
+
+.prioritise__item-title {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.prioritise__item-text {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 43px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  padding: 100px 0;
+  background-color: #f7f2ea;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 228px 228px 1fr 270px; /* 4 колонки */
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer__column-title {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer__list-link {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__list-link:hover {
+  color: #000;
+}
+
+/* 3-я колонка - цитата */
+.footer__quote {
+  margin-top: 79px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666;
+  max-width: 269px;
+}
+
+.footer__quote-author {
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.footer__contact-text {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.footer__contact-phone,
+.footer__contact-email {
+  margin-left: 128px;
+}
+
+.footer__contact-phone,
+.footer__contact-email {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.footer__contact-phone:hover,
+.footer__contact-email:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #999;
 }
