@@ -106,6 +106,16 @@
     height: 10px;
     width: 10px;
   }
+  .prioritise {
+    padding: 120px 0;
+  }
+  .prioritise__inner {
+    grid-template-columns: repeat(2, 257px);
+    gap: 30px 210px;
+  }
+  .footer__inner {
+    grid-template-columns: 97px 155px 269px 270px;
+  }
 }
 
 @media (max-width: 860px) {
