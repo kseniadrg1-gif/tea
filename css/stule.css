@@ -384,7 +384,7 @@ body {
 
 .footer__inner {
   display: grid;
-  grid-template-columns: 228px 228px 1fr 270px; /* 4 колонки */
+  grid-template-columns: 228px 228px 1fr 228px;
   gap: 40px;
   margin-bottom: 60px;
 }
@@ -432,32 +432,55 @@ body {
   margin-top: 20px;
 }
 
+/* 4-я колонка - контакты */
 .footer__contact-text {
   font-size: 13px;
   color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  width: 57px;
+  height: 91px;
+  object-fit: contain;
+}
+
+.footer__contact-items {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 15px;
 }
-.footer__contact-phone,
-.footer__contact-email {
-  margin-left: 128px;
+
+.footer__contact-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 .footer__contact-phone,
 .footer__contact-email {
-  display: block;
-  margin-top: 10px;
+  display: inline-block;
   font-size: 13px;
+  color: #000;
+  text-decoration: none;
 }
 
 .footer__contact-phone:hover,
 .footer__contact-email:hover {
   text-decoration: underline;
 }
-
 .footer__bottom {
-  text-align: center;
-  padding-top: 30px;
-  border-top: 1px solid #ddd;
-  font-size: 14px;
-  color: #999;
+  font-size: 16px;
 }
