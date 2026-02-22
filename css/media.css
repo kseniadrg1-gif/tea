@@ -432,16 +432,37 @@
     margin-bottom: 0;
     font-size: 24px;
   }
-  .assortment__img {
-    max-width: 170px;
-  }
+
   .title {
     font-size: 24px;
     margin-bottom: 30px;
   }
+
+  .assortment__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .assortment__img {
+    max-width: 169px;
+    width: 100%;
+    height: auto;
+  }
+
   .reviews__item {
     flex-basis: 100%;
   }
+  .main-blog {
+    text-align: center;
+  }
+  .main-blog__item {
+    display: inline;
+  }
+
+  .main-blog__item:nth-child(3),
+  .main-blog__item:nth-child(4) {
+    display: none;
+  }
+
   .reviews__item:last-child,
   .reviews__item:first-child {
     display: none;
