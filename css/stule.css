@@ -384,7 +384,7 @@ body {
 
 .footer__inner {
   display: grid;
-  grid-template-columns: 228px 228px 1fr 228px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-bottom: 60px;
 }
@@ -393,7 +393,7 @@ body {
   font-family: "Cormorant", serif;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .footer__list {
@@ -401,7 +401,7 @@ body {
 }
 
 .footer__list-item {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 16px;
 }
 
@@ -415,29 +415,27 @@ body {
   color: #000;
 }
 
-/* 3-я колонка - цитата */
+/* Цитата */
 .footer__quote {
-  margin-top: 79px;
+  margin-top: 0;
   font-size: 16px;
   font-style: italic;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  color: #666;
-  max-width: 269px;
+
+  margin-bottom: 30px;
 }
 
 .footer__quote-author {
   display: block;
   font-size: 12px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-/* 4-я колонка - контакты */
+/* Контакты */
 .footer__contact-text {
   font-size: 13px;
   color: #666;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .footer__logo-wrapper {
@@ -454,13 +452,13 @@ body {
 
 .footer__contact-items {
   flex: 1;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .footer__contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .footer__contact-icon {
@@ -481,6 +479,7 @@ body {
 .footer__contact-email:hover {
   text-decoration: underline;
 }
+
 .footer__bottom {
   font-size: 16px;
 }

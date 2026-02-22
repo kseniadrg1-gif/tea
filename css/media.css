@@ -113,9 +113,6 @@
     grid-template-columns: repeat(2, 257px);
     gap: 30px 210px;
   }
-  .footer__inner {
-    grid-template-columns: 97px 155px 269px 270px;
-  }
 }
 
 @media (max-width: 860px) {
@@ -198,8 +195,32 @@
     margin-right: 154px;
   }
 }
+@media (min-width: 767px) and (max-width: 840px) {
+  .main-blog__list {
+    display: block;
+  }
 
-@media (min-width: 760px) and (max-width: 860px) {
+  .main-blog__item {
+    margin-bottom: 30px;
+    width: calc(100% - 64px);
+  }
+
+  .main-blog__item:nth-child(1),
+  .main-blog__item:nth-child(3) {
+    margin-left: 64px;
+  }
+
+  .main-blog__item:nth-child(2),
+  .main-blog__item:nth-child(4) {
+    margin-left: 163px;
+  }
+
+  .main-blog__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 833px) and (max-width: 860px) {
   .user-actions {
     margin-left: 56px;
   }
@@ -231,6 +252,38 @@
   }
   .assortment__list {
     margin-bottom: 120px;
+  }
+  .main-blog__list {
+    display: block;
+  }
+
+  .main-blog__item {
+    margin-bottom: 30px;
+    width: calc(100% - 64px);
+  }
+
+  .main-blog__item:nth-child(1),
+  .main-blog__item:nth-child(3) {
+    margin-left: 64px;
+  }
+
+  .main-blog__item:nth-child(2),
+  .main-blog__item:nth-child(4) {
+    margin-left: 163px;
+  }
+
+  .main-blog__item:last-child {
+    margin-bottom: 0;
+  }
+  .prioritise__inner {
+    gap: 89px;
+  }
+
+  .footer__inner {
+    gap: 30px;
+  }
+
+  .footer__bottom {
   }
 }
 
@@ -298,6 +351,55 @@
   .mailing-list__btn {
     width: 100%;
     max-width: 200px;
+  }
+  .main-blog__item:nth-child(1),
+  .main-blog__item:nth-child(3) {
+    margin-left: 0;
+  }
+  .main-blog__item:nth-child(2),
+  .main-blog__item:nth-child(4) {
+    margin-left: 0;
+  }
+  .main-blog__item {
+    width: auto;
+  }
+  .main-blog__item-title {
+    margin: 0;
+  }
+  .prioritise__inner {
+    grid-template-columns: repeat(1, 257px);
+  }
+  .prioritise {
+    padding: 60px 0;
+  }
+  .prioritise__title {
+    margin-bottom: 30px;
+  }
+  .prioritise__inner {
+    gap: 50px;
+  }
+  .footer__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__column:nth-child(3) {
+    grid-column: span 2;
+  }
+  .footer__quote-author br {
+    display: none;
+  }
+  .footer__column-title {
+  }
+  .footer__contact-text {
+    text-align: center;
+  }
+  .footer__logo-wrapper {
+    gap: 25px;
+  }
+  .footer__contact-items {
+    margin-top: 20px;
   }
 }
 
